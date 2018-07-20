@@ -5,8 +5,8 @@
 		<button @click="handleClick">提交</button>{{inputValue}}
 	</div>
 	<ul>
-		<todo-item 
-			v-for="(item,index) in list" 
+		<todo-item
+			v-for="(item,index) in list"
 			:key="index"
 			:content="item"
 			:index="index"
@@ -14,7 +14,7 @@
 		>{{item}}</todo-item>
 	</ul>
   </div>
-  
+
 </template>
 
 <script>
@@ -34,7 +34,7 @@ export default {
 		handleClick(){
 			this.list.push(this.inputValue);
 			this.inputValue="";
-		},	
+		},
 		del(index){
 			this.list.splice(index,1);
 		}

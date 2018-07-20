@@ -3,7 +3,7 @@
 import Vue from 'vue'
 /* import App from './App' */
 import todoList from './todoList'
-import example from './example'
+import yomail from './yomail'
 import './jquery.min.js'
 import './assets/bootstrap/css/bootstrap.min.css'
 import './assets/bootstrap/js/bootstrap.min'
@@ -13,14 +13,14 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   components: {
-	todoList
+    yomail
   },
-  template: '<todoList/>'
+  template: '<yomail/>'
 })
-new Vue({
+/*new Vue({
   el: '#example',
   components: {
 	example
   },
   template: '<example/>'
-})
+})*/
